@@ -1,6 +1,6 @@
 # 🐱🥚-type1: GFlowNet-Fine-Tuned LLM for StrategyQA
 
-A lightweight implementation of GFlowNet for optimizing reasoning chain generation on StrategyQA dataset.
+An implementation of GFlowNet for optimizing reasoning chain generation on StrategyQA dataset.
 
 ## Overview
 
@@ -8,7 +8,7 @@ This project implements GFlowNet (Generative Flow Networks) to optimize large la
 
 ## Features
 - **Better Reasoning**: Elevated reasoning chain generation by fine-tuning LLM with GFlowNet on StrategyQA dataset
-- **Lightweight Design**: Optimized for minimal resource usage
+- **Efficient Design**: Optimized for minimal resource usage
 - **Dual Mode Support**: Mock mode for testing, real mode for training
 - **Configurable**: JSON-based configuration system
 
@@ -32,11 +32,11 @@ pip install -r requirements.txt
 python main.py --config config_mock.json --mode test
 ```
 
-### 3. Lightweight Training
+### 3. Real Training
 
 ```bash
-# Run training with lightweight real components
-python main.py --config config_real.json --mode experiment --experiment_name "lightweight_experiment"
+# Run training with real components
+python main.py --config config_real.json --mode experiment --experiment_name "real_experiment"
 ```
 
 ## Configuration
@@ -48,9 +48,9 @@ python main.py --config config_real.json --mode experiment --experiment_name "li
 - **Time**: ~30 seconds for full test
 
 ### Real Configuration (`config_real.json`)
-- **Purpose**: Lightweight real training
+- **Purpose**: Real training with actual LLM
 - **Model**: microsoft/DialoGPT-medium (~1GB)
-- **Resources**: 4GB RAM, 5GB storage
+- **Resources**: 16GB RAM, 20GB storage
 - **Time**: 30-45 minutes for training
 
 ## Usage Examples
@@ -66,7 +66,7 @@ python main.py --mode test --config config_real.json --max_train_samples 50
 
 ### Training
 ```bash
-# Lightweight training
+# Real training
 python main.py --mode train --config config_real.json --num_epochs 5
 
 # Full training (requires more resources)
@@ -166,8 +166,8 @@ PersonalProject/
 | Mode | Time | Memory | Storage | Model Size |
 |------|------|--------|---------|------------|
 | Mock | 30s | 1GB | 2GB | 0MB |
-| Lightweight | 5-10min | 4GB | 5GB | 1GB |
-| Full | 1-2h | 8GB | 10GB | 1GB |
+| Real | 30-45min | 16GB | 20GB | 1GB |
+| Full | 1-2h | 16GB | 32GB | 1-5GB |
 
 ## Command Line Options
 
