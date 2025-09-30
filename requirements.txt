@@ -1,0 +1,20 @@
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.40.0
+datasets>=2.20.0
+accelerate>=0.28.0
+
+# Essential utilities
+tqdm
+numpy
+pandas
+
+# Optional for advanced features
+# scikit-learn
+# sentence-transformers
+# rank_bm25
+# matplotlib
+# seaborn
+# tensorboard
+# bitsandbytes>=0.41.0
+# einops
