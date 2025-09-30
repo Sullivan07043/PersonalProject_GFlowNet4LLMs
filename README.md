@@ -66,6 +66,9 @@ python main.py --mode test --config config_real.json --max_train_samples 50
 
 ### Training
 ```bash
+# Mock training (for testing)
+python main.py --mode train --config config_mock.json --num_epochs 2
+
 # Real training
 python main.py --mode train --config config_real.json --num_epochs 5
 
@@ -76,7 +79,7 @@ python main.py --mode train --model_name "microsoft/DialoGPT-medium" --num_epoch
 ### Evaluation
 ```bash
 # Evaluate with mock components
-python main.py --mode eval --use_mock --max_eval_samples 20
+python main.py --mode eval --config config_mock.json --max_eval_samples 20
 
 # Evaluate with real components
 python main.py --mode eval --config config_real.json --max_eval_samples 100
