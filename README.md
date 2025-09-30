@@ -18,8 +18,8 @@ This project implements GFlowNet (Generative Flow Networks) to optimize large la
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd PersonalProject
+git clone https://github.com/Sullivan07043/PersonalProject_GFlowNet4LLMs.git
+cd PersonalProject_GFlowNet4LLMs
 
 # Install dependencies
 pip install -r requirements.txt
@@ -51,7 +51,7 @@ python main.py --config config_real.json --mode experiment --experiment_name "li
 - **Purpose**: Lightweight real training
 - **Model**: microsoft/DialoGPT-medium (~1GB)
 - **Resources**: 4GB RAM, 5GB storage
-- **Time**: 5-10 minutes for training
+- **Time**: 30-45 minutes for training
 
 ## Usage Examples
 
@@ -97,7 +97,7 @@ python inference_example.py --interactive
 python inference_example.py --question "Did the Hopi Indians use a symbol that was similar to the swastika?"
 
 # Batch inference from file
-python inference_example.py --questions_file questions.txt --output results.json
+python inference_example.py --questions_file example_questions.txt --output results.json
 
 # Run example questions
 python inference_example.py
@@ -167,7 +167,7 @@ PersonalProject/
 |------|------|--------|---------|------------|
 | Mock | 30s | 1GB | 2GB | 0MB |
 | Lightweight | 5-10min | 4GB | 5GB | 1GB |
-| Full | 1-2h | 16GB | 20GB | 13GB |
+| Full | 1-2h | 8GB | 10GB | 1GB |
 
 ## Command Line Options
 
