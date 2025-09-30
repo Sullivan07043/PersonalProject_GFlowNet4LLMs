@@ -58,7 +58,7 @@ python main.py --config config_real.json --mode experiment --experiment_name "re
 ### Testing
 ```bash
 # Quick mock test
-python main.py --mode test --use_mock --max_train_samples 10
+python main.py --mode test --config config_mock.json
 
 # Real component test
 python main.py --mode test --config config_real.json --max_train_samples 50
