@@ -1,4 +1,4 @@
-# 🐱🥚-type1: GFlowNet-Fine-Tuned LLM for StrategyQA
+# GFlowNet-Fine-Tuned LLM for StrategyQA
 
 An implementation of GFlowNet for optimizing reasoning chain generation on StrategyQA dataset.
 
